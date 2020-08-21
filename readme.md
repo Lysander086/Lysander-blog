@@ -15,3 +15,5 @@
 - #前端 webstorm + chrome 的调试方法
   - [issue](https://github.com/Lysander686/Lysander-blog/issues/1)
   - [md](https://github.com/Lysander686/Lysander-blog/blob/master/2020/webstorm%20%2B%20chrome%20%E8%B0%83%E8%AF%95vue.md)
+
+- [在大陆使用tik tok的方法](https://github.com/Lysander686/Lysander-blog/issues/2)
