@@ -81,4 +81,5 @@ By integrating these practices into your PR process, you can improve collaborati
 # Issues that I found during stacked PR
 - I need to apply duplicate changse to the code. 
   - examples: merge from the main to the current branch.
-  - The update branch button no long works.
+  - The update branch button of GitHub no long works since we stack them.
+
