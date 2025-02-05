@@ -76,3 +76,9 @@ To enhance the effectiveness of your pull requests (PRs), consider incorporating
 - **Highlight the Status with Labels**: Add a status label to your pull request to show whether it’s ready for review, blocked, or in progress. This helps reviewers understand the state of your work at a glance. ([docs.github.com](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/getting-started/helping-others-review-your-changes?utm_source=chatgpt.com))
 
 By integrating these practices into your PR process, you can improve collaboration, streamline reviews, and maintain high code quality. 
+
+
+# Issues that I found during stacked PR
+- I need to apply duplicate changse to the code. 
+  - examples: merge from the main to the current branch.
+  - The update branch button no long works.
