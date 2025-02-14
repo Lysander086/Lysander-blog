@@ -1,0 +1,4 @@
+- Problem clarification
+- Solution calcification
+- Reach consensus on solution and actions
+- Be clear about responsibilities on actions
