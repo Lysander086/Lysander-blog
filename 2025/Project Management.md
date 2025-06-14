@@ -1,3 +1,7 @@
+# Reference
+https://www.youtube.com/watch?v=v21jg8wb1eU
+
+# Questoins
 「固定した日付に合わせるか、固定した機能数に合わせるかで見方が変わるが、どちらも不確実性が大きい」という点について、詳しくご説明します。
 
 ### 意味
