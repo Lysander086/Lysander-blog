@@ -1,0 +1,144 @@
+version: '3.8'
+
+services:
+  # Nginx Load Balancers with Keepalived
+  nginx1:
+    build: ./docker/nginx
+    container_name: nginx1
+    hostname: nginx1
+    ports:
+      - "8081:80"
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.10
+    volumes:
+      - ./nginx/nginx1.conf:/etc/nginx/nginx.conf
+      - ./nginx/keepalived1.conf:/etc/keepalived/keepalived.conf
+    cap_add:
+      - NET_ADMIN
+      - NET_BROADCAST
+      - NET_RAW
+    depends_on:
+      - web1
+      - web2
+
+  nginx2:
+    build: ./docker/nginx
+    container_name: nginx2
+    hostname: nginx2
+    ports:
+      - "8082:80"
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.11
+    volumes:
+      - ./nginx/nginx2.conf:/etc/nginx/nginx.conf
+      - ./nginx/keepalived2.conf:/etc/keepalived/keepalived.conf
+    cap_add:
+      - NET_ADMIN
+      - NET_BROADCAST
+      - NET_RAW
+    depends_on:
+      - web1
+      - web2
+
+  # Web Applications
+  web1:
+    build: ./webapp
+    container_name: web1
+    hostname: web1
+    environment:
+      - NODE_ENV=production
+      - REDIS_HOST=redis
+      - MYSQL_HOST=mysql1
+      - APP_PORT=3000
+      - APP_NAME=web1
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.20
+    depends_on:
+      - redis
+      - mysql1
+
+  web2:
+    build: ./webapp
+    container_name: web2
+    hostname: web2
+    environment:
+      - NODE_ENV=production
+      - REDIS_HOST=redis
+      - MYSQL_HOST=mysql1
+      - APP_PORT=3000
+      - APP_NAME=web2
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.21
+    depends_on:
+      - redis
+      - mysql1
+
+  # Redis for Session Management
+  redis:
+    image: redis:7-alpine
+    container_name: redis
+    hostname: redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.30
+    command: redis-server --appendonly yes
+
+  # MySQL Master-Slave
+  mysql1:
+    image: mysql:8.0
+    container_name: mysql1
+    hostname: mysql1
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: webapp_db
+      MYSQL_USER: webapp_user
+      MYSQL_PASSWORD: webapp_pass
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql1_data:/var/lib/mysql
+      - ./mysql/master.cnf:/etc/mysql/conf.d/master.cnf
+      - ./mysql/init-master.sql:/docker-entrypoint-initdb.d/init.sql
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.40
+
+  mysql2:
+    image: mysql:8.0
+    container_name: mysql2
+    hostname: mysql2
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpass
+      MYSQL_DATABASE: webapp_db
+      MYSQL_USER: webapp_user
+      MYSQL_PASSWORD: webapp_pass
+    ports:
+      - "3307:3306"
+    volumes:
+      - mysql2_data:/var/lib/mysql
+      - ./mysql/slave.cnf:/etc/mysql/conf.d/slave.cnf
+    networks:
+      app_network:
+        ipv4_address: 172.20.0.41
+    depends_on:
+      - mysql1
+
+networks:
+  app_network:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 172.20.0.0/16
+
+volumes:
+  redis_data:
+  mysql1_data:
+  mysql2_data:
