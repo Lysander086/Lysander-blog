@@ -1,4 +1,21 @@
 # java.gitignore + frontend.gitignore
+
+# Explicitly track markdown and image files
+!*.md
+!**/*.md
+!*.jpg
+!*.jpeg
+!*.png
+!*.gif
+!*.svg
+!*.webp
+!**/*.jpg
+!**/*.jpeg
+!**/*.png
+!**/*.gif
+!**/*.svg
+!**/*.webp
+
 HELP.md
 target/
 !.mvn/wrapper/maven-wrapper.jar
