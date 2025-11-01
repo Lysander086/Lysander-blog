@@ -15,11 +15,10 @@
 - [労働基準法（Labor Standards Act）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/) - 厚生労働省 (Ministry of Health, Labour and Welfare)
 - [個人情報保護法（Personal Information Protection Act）](https://www.ppc.go.jp/personalinfo/legal/) - 個人情報保護委員会 (Personal Information Protection Commission)
 - [営業秘密管理指針](https://www.meti.go.jp/policy/economy/chizai/chiteki/trade-secret.html) - 経済産業省 (Ministry of Economy, Trade and Industry)
-- [競業避止義務について](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000148322.html) - 厚生労働省
+- [「働き方改革」の実現に向けて](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000148322.html) - 厚生労働省
 
 ### Interview Content Sharing Guidelines
-- [企業秘密の取り扱いに関するガイドライン](https://www.jftc.go.jp/dk/guideline/unyoukijun/kigyohimitsu.html) - 公正取引委員会 (Japan Fair Trade Commission)
-- [転職活動における注意事項](https://www.jil.go.jp/kokunai/statistics/kako/2019/documents/20190830.pdf) - 労働政策研究・研修機構 (JILPT)
+- [営業秘密管理指針](https://www.meti.go.jp/policy/economy/chizai/chiteki/trade-secret.html) - 経済産業省 (Ministry of Economy, Trade and Industry)
 
 ### Intellectual Property and Confidentiality
 - [知的財産権について](https://www.jpo.go.jp/) - 特許庁 (Japan Patent Office)
@@ -35,18 +34,11 @@
 - [IT フリーランス実態調査 2024](https://freelance-start.com/reports/freelance-research-2024/) - フリーランススタート
 - [レバテックフリーランス単価相場](https://freelance.levtech.jp/market/) - レバテックフリーランス
 - [Midworks フリーランス単価レポート](https://mid-works.com/market/) - Midworks
-- [フリーランス白書 2024](https://freelance-jp.org/news/20240228-14086/) - フリーランス協会
 
 ### Business Development and Networking
 - [中小企業庁経営支援](https://www.chusho.meti.go.jp/) - 中小企業庁
 - [JETRO ビジネスサポート](https://www.jetro.go.jp/services/) - 日本貿易振興機構
-- [起業・創業支援](https://www.chusho.meti.go.jp/keiei/sogyo/) - 中小企業庁
-- [IT人材白書 2024](https://www.ipa.go.jp/jinzai/jigyou/about.html) - 情報処理推進機構 (IPA)
-
-### Portfolio Development
-- [GitHub Pages](https://pages.github.com/) - 無料ポートフォリオホスティング
-- [Netlify](https://www.netlify.com/) - 静的サイトデプロイメント
-- [Vercel](https://vercel.com/) - フロントエンド開発者向けプラットフォーム
+ 
 
 ## Japanese Market Analysis (日本市場分析)
 
