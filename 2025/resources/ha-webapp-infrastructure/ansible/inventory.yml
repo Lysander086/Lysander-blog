@@ -1,0 +1,35 @@
+all:
+  children:
+    nginx_lb:
+      hosts:
+        nginx1:
+          ansible_host: 172.20.0.10
+          keepalived_state: MASTER
+          keepalived_priority: 100
+        nginx2:
+          ansible_host: 172.20.0.11
+          keepalived_state: BACKUP
+          keepalived_priority: 90
+    web_apps:
+      hosts:
+        web1:
+          ansible_host: 172.20.0.20
+          app_name: web1
+        web2:
+          ansible_host: 172.20.0.21
+          app_name: web2
+    databases:
+      hosts:
+        mysql1:
+          ansible_host: 172.20.0.40
+          mysql_role: master
+        mysql2:
+          ansible_host: 172.20.0.41
+          mysql_role: slave
+    redis:
+      hosts:
+        redis:
+          ansible_host: 172.20.0.30
+  vars:
+    ansible_connection: docker
+    vip_address: 172.20.0.100

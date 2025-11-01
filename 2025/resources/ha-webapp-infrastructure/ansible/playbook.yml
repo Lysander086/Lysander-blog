@@ -1,0 +1,67 @@
+---
+- name: Deploy HA Web Application Infrastructure
+  hosts: all
+  become: yes
+  tasks:
+    - name: Ensure all services are healthy
+      wait_for:
+        port: "{{ item.port }}"
+        host: "{{ item.host }}"
+        state: started
+        timeout: 30
+      with_items:
+        - { host: "172.20.0.10", port: 80 }
+        - { host: "172.20.0.11", port: 80 }
+        - { host: "172.20.0.20", port: 3000 }
+        - { host: "172.20.0.21", port: 3000 }
+        - { host: "172.20.0.30", port: 6379 }
+        - { host: "172.20.0.40", port: 3306 }
+        - { host: "172.20.0.41", port: 3306 }
+      delegate_to: localhost
+
+- name: Configure Nginx Load Balancers
+  hosts: nginx_lb
+  become: yes
+  roles:
+    - nginx_lb
+
+- name: Configure Web Applications
+  hosts: web_apps
+  become: yes
+  roles:
+    - webapp
+
+- name: Configure MySQL Databases
+  hosts: databases
+  become: yes
+  roles:
+    - mysql
+
+- name: Configure Redis
+  hosts: redis
+  become: yes
+  roles:
+    - redis
+
+- name: Verify Infrastructure
+  hosts: localhost
+  tasks:
+    - name: Test VIP availability
+      uri:
+        url: "http://172.20.0.100/health"
+        method: GET
+        status_code: 200
+      retries: 5
+      delay: 2
+
+    - name: Test Redis connectivity
+      shell: |
+        docker exec redis redis-cli ping
+      register: redis_ping
+      failed_when: redis_ping.stdout != "PONG"
+
+    - name: Test MySQL replication
+      shell: |
+        docker exec mysql2 mysql -uroot -prootpass -e "SHOW SLAVE STATUS\G" | grep -E "Slave_IO_Running|Slave_SQL_Running"
+      register: replication_status
+      failed_when: "'Yes' not in replication_status.stdout"
