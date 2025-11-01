@@ -37,3 +37,8 @@ src/main/resources/application-dev.properties
 **/node_modules
 **/archivez # files under this dir will all be ignored
 **/archivez
+# Allow markdown files in specific directories
+!**/resources.md
+!**/description.md
+!archived/**/*.md
+!2025/**/*.md
