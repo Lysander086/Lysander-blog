@@ -1,17 +1,14 @@
-- https://github.com/AnchorOrg/anchor-auto-test/issues/3
-- https://github.com/Lysander086/Lysander-blog/issues/11
-
-# 17:25 
-- [x] 仕様書作成と調査を完了する。
-
-# 17:30
-- [x] ブルースカイソーシャルはどのようにテストを完了するのか教えてください。
-  - 完全な調査レポート: `bluesky-testing-research.md`
-
 # 17:55
 - [ ] Scalaとその主な実用例について簡潔に学ぶ。 https://github.com/Lysander086/Lysander-blog/issues/18
-  - Scalaなどのサーバーサイド言語による開発運用経験（２年以上）　　
+  - Scalaなどのサーバーサイド言語による開発運用経験（２年以上）
 
-# 18:33
-- [x] [Cypress in 100 Seconds](https://www.youtube.com/watch?v=BQqzfHQkREo)
-- [x] brwoser use
+
+- [ ] anchor自動テストデモの構築
+- [ ] 動作確認
+	- 現在の契約は、新しい契約が受諾された場合、平日は一時的に停止される
+	- そして、そのことを単に宣言するだけ
+	- この対応の理由：以前話した会社が副業について過度に要求し、彼らの自由時間を使って私がまだ副業をするのではないかと懸念していた。
+- [ ] NoSQL
+- [ ] CAP理論
+- [ ] AIエコシステムにおけるMilvusの役割
+- [ ] [ELK.ja.md](obsidian://open?vault=all-wiki&file=Lysander-blog%2F2025%2Fconsutaiton_n_interview%2Fresources%2FELK.ja)
