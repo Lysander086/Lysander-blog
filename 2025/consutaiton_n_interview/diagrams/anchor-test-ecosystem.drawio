@@ -1,6 +1,6 @@
 <mxfile host="65bd71144e">
     <diagram name="Anchor テストエコシステム" id="anchor-test-ecosystem">
-        <mxGraphModel dx="2835" dy="1396" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
+        <mxGraphModel dx="1269" dy="1032" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="900" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
@@ -35,7 +35,7 @@
                     <mxGeometry x="620" y="290" width="460" height="30" as="geometry"/>
                 </mxCell>
                 <mxCell id="playwright-mcp" value="Playwright MCP サーバー&lt;br&gt;(AI駆動のテスト生成・探索・デバッグ支援)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontSize=14;fontStyle=1;verticalAlign=middle;align=center;" parent="1" vertex="1">
-                    <mxGeometry x="100" y="480" width="1000" height="100" as="geometry"/>
+                    <mxGeometry x="100" y="430" width="1000" height="100" as="geometry"/>
                 </mxCell>
                 <mxCell id="cicd-pipeline" value="CI/CD パイプライン" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=14;fontStyle=1;verticalAlign=top;" parent="1" vertex="1">
                     <mxGeometry x="100" y="650" width="1000" height="180" as="geometry"/>

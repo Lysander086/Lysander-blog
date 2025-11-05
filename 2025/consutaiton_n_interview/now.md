@@ -3,7 +3,10 @@
   - Scalaなどのサーバーサイド言語による開発運用経験（２年以上）
 
 
-- [ ] anchor自動テストデモの構築
+- [x] anchor自動テストデモの構築
+`reference`: [link](https://www.youtube.com/watch?v=IixdI2bTR1g)
+- ![alt text](image.png)
+- ![alt text](image-1.png)
 - [ ] 動作確認
 	- 現在の契約は、新しい契約が受諾された場合、平日は一時的に停止される
 	- そして、そのことを単に宣言するだけ
@@ -12,3 +15,4 @@
 - [ ] CAP理論
 - [ ] AIエコシステムにおけるMilvusの役割
 - [ ] [ELK.ja.md](obsidian://open?vault=all-wiki&file=Lysander-blog%2F2025%2Fconsutaiton_n_interview%2Fresources%2FELK.ja)
+- [ ] まだコミットされていないすべての変更点を読み込む
