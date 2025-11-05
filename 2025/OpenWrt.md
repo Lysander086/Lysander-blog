@@ -2,6 +2,6 @@
 ```text
 # configure the network of OpenWrt Router to have health sleep routine.
 ## crontab -e で編集
-10 22 * * * /etc/init.d/network stop
-55 00 * * * /etc/init.d/network start
+45 21 * * * /etc/init.d/network stop
+15 23 * * * /etc/init.d/network start
 ```
