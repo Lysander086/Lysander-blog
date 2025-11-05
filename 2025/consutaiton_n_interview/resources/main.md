@@ -7,13 +7,13 @@
 - [How to make $1,000,000 as a freelance software engineer](https://www.youtube.com/watch?v=w7NeZNGShVE)
 
 ## Chinese Resources (中文资源)
-- [老程序员接了一个20万的小程序酒店在线开房项目，开发周期90天](https://www.bilibili.com/video/BV1gf4y1i7dY/) - 我是程序汪 (Bilibili)
+- [老程序员接了一个20万的小程序酒店在线开房项目,开发周期90天](https://www.bilibili.com/video/BV1gf4y1i7dY/) - 我是程序汪 (Bilibili)
 
 ## Legal Compliance Resources (法的コンプライアンス)
 
 ### Japanese Employment and Business Law
-- [労働基準法（Labor Standards Act）](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/) - 厚生労働省 (Ministry of Health, Labour and Welfare)
-- [個人情報保護法（Personal Information Protection Act）](https://www.ppc.go.jp/personalinfo/legal/) - 個人情報保護委員会 (Personal Information Protection Commission)
+- [労働基準法(Labor Standards Act)](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/koyou_roudou/roudoukijun/roudouzikan/) - 厚生労働省 (Ministry of Health, Labour and Welfare)
+- [個人情報保護法(Personal Information Protection Act)](https://www.ppc.go.jp/personalinfo/legal/) - 個人情報保護委員会 (Personal Information Protection Commission)
 - [営業秘密管理指針](https://www.meti.go.jp/policy/economy/chizai/chiteki/trade-secret.html) - 経済産業省 (Ministry of Economy, Trade and Industry)
 - [「働き方改革」の実現に向けて](https://www.mhlw.go.jp/stf/seisakunitsuite/bunya/0000148322.html) - 厚生労働省
 
@@ -22,7 +22,7 @@
 
 ### Intellectual Property and Confidentiality
 - [知的財産権について](https://www.jpo.go.jp/) - 特許庁 (Japan Patent Office)
-- [秘密保持契約（NDA）の基本](https://www.jetro.go.jp/world/japan/invest/setting_up/section3/page6.html) - JETRO
+- [秘密保持契約(NDA)の基本](https://www.jetro.go.jp/world/japan/invest/setting_up/section3/page6.html) - JETRO
 
 ### Legal Consultation Resources
 - [法テラス](https://www.houterasu.or.jp/) - 日本司法支援センター (Japan Legal Support Center)
@@ -38,7 +38,7 @@
 ### Business Development and Networking
 - [中小企業庁経営支援](https://www.chusho.meti.go.jp/) - 中小企業庁
 - [JETRO ビジネスサポート](https://www.jetro.go.jp/services/) - 日本貿易振興機構
- 
+
 
 ## Japanese Market Analysis (日本市場分析)
 
