@@ -31,7 +31,7 @@
 
 現在の設定:
 ```yaml
-project-url: https://github.com/users/Lysander086/projects/1
+project-url: https://github.com/users/Lysander086/projects/8
 ```
 
 プロジェクト番号を変更する場合は、URL の最後の数字を変更してください。
