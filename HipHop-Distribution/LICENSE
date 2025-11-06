@@ -24,7 +24,7 @@ The following actions are **prohibited** without explicit written permission fro
 
 ## Scope
 
-This license applies to all creative content stored in this repository, regardless of the directory or file format. When in doubt about whether content is covered by this license or the MIT License (see LICENSE file), please contact the repository owner.
+This license applies to all creative content stored in this repository, regardless of the directory or file format. When in doubt about whether content is covered by this license or the MIT License (see ../LICENSE file), please contact the repository owner.
 
 ## Requesting Permission
 
@@ -32,4 +32,4 @@ To request permission to use any creative content in this repository, please con
 
 ---
 
-**Note**: Technical code, documentation, and configuration files in this repository are licensed under the MIT License. See the LICENSE file for details.
+**Note**: Technical code, documentation, and configuration files in this repository are licensed under the MIT License. See the [../LICENSE](../LICENSE) file for details.

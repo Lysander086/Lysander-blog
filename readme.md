@@ -15,7 +15,7 @@
 - **利用**: 商用利用を含む自由な利用が可能
 
 ### 創作コンテンツ / Creative Content
-- **ライセンス**: [All Rights Reserved](LICENSE-CONTENT)
+- **ライセンス**: [All Rights Reserved](HipHop-Distribution/LICENSE)
 - **対象**: 歌詞、詩、創作的な文章コンテンツ
 - **利用**: 著作権者の明示的な許可が必要
 
