@@ -7,16 +7,7 @@
 
 ## 📄 ライセンス / License
 
-このリポジトリはデュアルライセンス構造を採用しています。
+このリポジトリはデュアルライセンス構造を採用しています。詳細は以下をご確認ください。
 
-### コード・技術文書 / Code & Technical Documentation
-- **ライセンス**: [MIT License](LICENSE)
-- **対象**: プログラムコード、設定ファイル、技術ドキュメント
-- **利用**: 商用利用を含む自由な利用が可能
-
-### 創作コンテンツ / Creative Content
-- **ライセンス**: [All Rights Reserved](HipHop-Distribution/LICENSE)
-- **対象**: 歌詞、詩、創作的な文章コンテンツ
-- **利用**: 著作権者の明示的な許可が必要
-
-詳細は各ライセンスファイルをご確認ください。
+- [MIT License](LICENSE) - コード・技術文書
+- [All Rights Reserved](HipHop-Distribution/LICENSE) - 創作コンテンツ
