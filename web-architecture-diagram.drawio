@@ -1,0 +1,154 @@
+<mxfile host="app.diagrams.net" modified="2025-11-20T00:00:00.000Z" agent="5.0" etag="" version="24.7.17" type="device">
+  <diagram name="Web Architecture" id="web-arch">
+    <mxGraphModel dx="1422" dy="765" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="827" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        
+        <!-- Public Network -->
+        <mxCell id="public-network" value="ドメイン解析&#xa;パブリックIP" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffcccc;strokeColor=#b85450;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="80" y="200" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- VIP block -->
+        <mxCell id="vip-block" value="vip" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Microsoft YaHei;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="80" y="320" width="100" height="40" as="geometry" />
+        </mxCell>
+        
+        <!-- Web servers -->
+        <mxCell id="web1" value="Nginx&#xa;web 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="160" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="web2" value="Nginx&#xa;web 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="240" y="280" width="80" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Keepalived labels -->
+        <mxCell id="keepalived1" value="keepalived" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="240" y="140" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="keepalived2" value="keepalived" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="240" y="340" width="80" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Applications -->
+        <mxCell id="app1" value="Webアプリケーション&#xa;アプリ 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="app2" value="Webアプリケーション&#xa;アプリ 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="420" y="320" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- Redis -->
+        <mxCell id="redis" value="Redis&#xa;キャッシュ" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontFamily=Microsoft YaHei;fontSize=14;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="420" y="200" width="100" height="80" as="geometry" />
+        </mxCell>
+        
+        <!-- MySQL servers -->
+        <mxCell id="mysql1" value="MySQL マスターノード&#xa;MySQL 1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="160" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="mysql2" value="MySQL マスターノード&#xa;MySQL 2" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#e1d5e7;strokeColor=#9673a6;fontFamily=Microsoft YaHei;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="620" y="280" width="100" height="60" as="geometry" />
+        </mxCell>
+        
+        <!-- VIP blocks for MySQL -->
+        <mxCell id="vip-mysql1" value="vip" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Microsoft YaHei;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="120" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="vip-mysql2" value="vip" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontFamily=Microsoft YaHei;fontSize=12;fontStyle=1;" vertex="1" parent="1">
+          <mxGeometry x="620" y="350" width="100" height="30" as="geometry" />
+        </mxCell>
+        
+        <!-- Keepalived labels for MySQL -->
+        <mxCell id="keepalived-mysql1" value="keepalived" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="620" y="220" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <mxCell id="keepalived-mysql2" value="keepalived" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=10;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="620" y="260" width="100" height="20" as="geometry" />
+        </mxCell>
+        
+        <!-- Connections -->
+        <!-- Public network to VIP -->
+        <mxCell id="conn1" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#d79b00;strokeWidth=2;" edge="1" parent="1" source="public-network" target="vip-block">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- VIP to web servers -->
+        <mxCell id="conn2" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="vip-block" target="web1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn3" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#82b366;strokeWidth=2;" edge="1" parent="1" source="vip-block" target="web2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Web servers to applications -->
+        <mxCell id="conn4" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="web1" target="app1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn5" value="" style="endArrow=classic;html=1;rounded=0;strokeColor=#6c8ebf;strokeWidth=2;" edge="1" parent="1" source="web2" target="app2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Applications to Redis -->
+        <mxCell id="conn6" value="Cookie" style="endArrow=classic;html=1;rounded=0;strokeColor=#b85450;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#b85450;" edge="1" parent="1" source="app1" target="redis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn7" value="Cookie" style="endArrow=classic;html=1;rounded=0;strokeColor=#b85450;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#b85450;" edge="1" parent="1" source="app2" target="redis">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Redis to MySQL -->
+        <mxCell id="conn8" value="Cookie" style="endArrow=classic;html=1;rounded=0;strokeColor=#9673a6;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#9673a6;" edge="1" parent="1" source="redis" target="mysql1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <mxCell id="conn9" value="Cookie" style="endArrow=classic;html=1;rounded=0;strokeColor=#9673a6;strokeWidth=2;fontFamily=Microsoft YaHei;fontSize=11;fontColor=#9673a6;" edge="1" parent="1" source="redis" target="mysql2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="430" y="350" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        
+        <!-- Bottom note -->
+        <mxCell id="note" value="最後にRedis単一障害点を回避するため" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontFamily=Microsoft YaHei;fontSize=12;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="320" y="420" width="200" height="30" as="geometry" />
+        </mxCell>
+        
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
