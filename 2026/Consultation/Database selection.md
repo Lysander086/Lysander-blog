@@ -5,6 +5,10 @@ SEO: #career
 
 🔗 出典：[Choosing the Right Database: A Guide for System Design Interviews - Medium](https://medium.com/@agustin.ignacio.rossi/choosing-the-right-database-a-guide-for-system-design-interviews-8d176b022011)
 
+
+# Resource
+![[Pasted image 20260420172940.png]]
+
 ### 概要
 システム設計において、適切なデータベースの選択は非常に重要。**読み取り重視（Read-Heavy）**か**書き込み重視（Write-Heavy）**かによって選ぶべきDBが変わる。
 
@@ -28,13 +32,13 @@ SEO: #career
 
 ---
 
-### 重要なトレードオフ
+### 重要なトレードオフ trade-offs
 
-| 観点 | Read-Heavy | Write-Heavy |
-|------|-----------|-------------|
-| 整合性 | 強整合性が重要（金融・分析） | 結果整合性でOK（ログ・監視） |
-| レイテンシ対策 | キャッシュ層（Redis等）活用 | バッチ書き込み・非同期書き込み |
-| スケール | リードレプリカ、シャーディング | Cassandra・DynamoDB等の分散DB |
+| 観点      | Read-Heavy       | Write-Heavy              |
+| ------- | ---------------- | ------------------------ |
+| 整合性     | 強整合性が重要（金融・分析）   | 結果整合性でOK（ログ・監視）          |
+| レイテンシ対策 | キャッシュ層（Redis等）活用 | バッチ書き込み・非同期書き込み          |
+| スケール    | リードレプリカ、シャーディング  | Cassandra・DynamoDB等の分散DB |
 
 ---
 
